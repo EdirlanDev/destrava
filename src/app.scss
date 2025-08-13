@@ -252,7 +252,7 @@ img{ max-width:100%; display:block }
 }
 
 /* =================== FOOTER =================== */
-.footer{ border-top:1px solid var(--line); padding: clamp(28px, 6vw, 48px) 0; color: var(--muted);
+.footer{ border-top:1px solid var(--line); padding-bottom: 150px; color: var(--muted);
   .footer__cols{
     display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: clamp(12px, 3.5vw, 20px); text-align:left;
@@ -269,4 +269,58 @@ img{ max-width:100%; display:block }
   [data-reveal]{ opacity:1; transform:none }
   .btn--pulse{ animation:none }
   .bullets li, .list li, .faq__item{ animation:none; opacity:1; transform:none }
+}
+/* ====== EXPERT ====== */
+.expert .expert__box{
+  display:grid; gap: clamp(10px, 2.5vw, 16px);
+}
+
+/* ====== MECANISMO 5D ====== */
+.mechanism .grid--icons{
+  margin-top: clamp(10px, 2.5vw, 16px);
+}
+.mechanism .item{
+  padding: 12px 16px;
+  font-weight: 800;
+  border-radius: 999px;
+}
+/* ====== EXPERT HERO ====== */
+.expert {
+  position: relative;
+  color: #fff;
+  
+
+  .expert__bg {
+    position: absolute;
+    inset: 0;
+    background: url('/bg.png') center/cover no-repeat;
+    z-index: 0;
+  }
+
+  &::after {
+    /* overlay escuro p/ contraste */
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.35) 50%, rgba(0,0,0,0) 100%);
+    z-index: 1;
+  }
+
+  .expert__content {
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 768px) {
+  .expert {
+    text-align: center;
+    &::after {
+      background: rgba(0,0,0,0.6);
+    }
+    .expert__content {
+      max-width: 100%;
+    }
+  }
 }
