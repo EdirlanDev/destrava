@@ -50,10 +50,10 @@ export default function Hero({ onPrimaryClick }) {
                 </div>
 
                 {/* CTA principal estilo “pílula” com pulse */}
-                <button className="cta cta--pill" onClick={onPrimaryClick}>
+                <a className="cta cta--pill" href="#planos">
                     <FaHeadphones />
                     Comece agora a sua transformação
-                </button>
+                </a>
 
                 {/* Avatares (prova social visual) */}
                 <div className="hero__avatars">

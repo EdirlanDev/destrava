@@ -30,7 +30,7 @@ export default function Planos({
               <li><FaCheckCircle /> Método completo por 30 dias</li>
               <li><FaCheckCircle /> Bônus 1: Cardápios antiestresse</li>
               <li><FaCheckCircle /> Bônus 2: SOS TPM (antidoce)</li>
-              <li><FaCheckCircle /> Bônus 3: 7 dias — Roupas que voltam a servir</li>
+              <li><FaCheckCircle /> Bônus 3: 7 dias Roupas que voltam a servir</li>
               <li><FaCheckCircle /> Comunidade + suporte</li>
               <li><FaCheckCircle /> Acesso imediato</li>
             </ul>

@@ -21,7 +21,7 @@ const ITEMS = [
     icon: <FaBalanceScale />,
     title: "Disciplina emocional",
     text:
-      "Treina autocontrole e clareza de escolhas para parar de se sabotar — mesmo nos dias caóticos.",
+      "Treina autocontrole e clareza de escolhas para parar de se sabotar mesmo nos dias caóticos.",
   },
   {
     icon: <FaCalendarCheck />,
@@ -33,7 +33,7 @@ const ITEMS = [
     icon: <FaAppleAlt />,
     title: "Dieta realista",
     text:
-      "Plano simples e acessível que cabe na sua rotina. Nada de restrição extrema — é reeducação leve.",
+      "Plano simples e acessível que cabe na sua rotina. Nada de restrição extrema é reeducação leve.",
   },
   {
     icon: <FaDumbbell />,
