@@ -1,0 +1,50 @@
+.footer{
+  background:#0e0f14; color:#fff; border-top:1px solid rgba(255,255,255,.08);
+
+  .footer__grid{
+    display:grid; gap: clamp(16px, 4vw, 28px);
+    grid-template-columns: 1.1fr .9fr 1.1fr;
+    padding: clamp(28px, 6vw, 44px) 0;
+  }
+
+  .footer__brand{
+    .brand__name{ font-weight:900; letter-spacing:.02em; }
+    .brand__tag{ display:block; color:#ff9bb3; margin-top:2px; }
+    .brand__claim{ color:rgba(255,255,255,.8); margin:8px 0 0; }
+  }
+
+  .footer__nav{
+    display:grid; gap:8px; align-content:start;
+    a{
+      color:rgba(255,255,255,.9); text-decoration:none;
+      &:hover{ opacity:.95; text-decoration:underline; }
+    }
+  }
+
+  .footer__trust{
+    display:grid; gap:8px; align-content:start;
+    .t{
+      display:flex; align-items:center; gap:8px;
+      background:rgba(0,0,0,.35); border:1px solid rgba(255,255,255,.18);
+      padding:8px 10px; border-radius:10px;
+      svg{ opacity:.95; }
+    }
+  }
+
+  .footer__foot{
+    border-top:1px solid rgba(255,255,255,.08);
+    padding:12px 0; background:#0c0d12; font-size:.95rem;
+    .container{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+    }
+    .links a{
+      color:rgba(255,255,255,.8); text-decoration:none; margin-left:12px;
+      &:hover{ text-decoration:underline; }
+    }
+  }
+
+  @media (max-width: 900px){
+    .footer__grid{ grid-template-columns: 1fr; }
+    .footer__foot .container{ flex-direction:column; text-align:center; }
+  }
+}

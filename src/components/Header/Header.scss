@@ -1,0 +1,52 @@
+/* src/components/Header.scss */
+:root{ --header-h: 64px; }
+
+.header{
+  position: fixed; inset: 0 0 auto 0; z-index: 50; height: var(--header-h);
+  backdrop-filter: saturate(140%) blur(6px);
+  background: linear-gradient(to bottom, rgba(0,0,0,.55), rgba(0,0,0,0));
+
+  .header__inner{
+    display:flex; align-items:center; justify-content:space-between;
+    height:100%; padding: 0 var(--gutter);
+  }
+
+  .header__brand{
+    display:flex; gap:6px; align-items:baseline; text-decoration:none;
+  }
+  .brand__mark{ color:#ff4f7a; font-weight:800; letter-spacing:.5px; }
+  .brand__suffix{ color:#d6d6d6; font-weight:500; font-size:.95rem; }
+
+  .header__nav{ display:flex; gap:18px; align-items:center; }
+  .nav__link{
+    color:#eaeaea; text-decoration:none; font-weight:600; opacity:.9;
+    display:flex; gap:6px; align-items:center;
+    &:hover{ opacity:1; }
+  }
+
+  /* CTA com BG (desktop e mobile) */
+  .nav__cta{
+    padding:10px 14px; border-radius:14px;
+    background: linear-gradient(135deg, #ff4f7a, #ff6f91);
+    color:#fff; box-shadow:0 12px 28px rgba(255,79,122,.35);
+    border:1px solid rgba(255,255,255,.15);
+  }
+
+  /* MOBILE: mostrar só o CTA */
+  @media (max-width: 768px){
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header__inner{ padding: 0 var(--gutter); }
+    .header__nav{ gap:0; }
+     .header__brand{width: 100%; font-size: 15px;}
+     .brand__suffix{width: 100%;}
+    .nav__link{ display:none; }
+    .nav__cta{
+      display:flex; font-size:0.80rem; padding:5px 16px;width: 100%;align-items: center;
+
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.faq{
+  background:#0e0f14;
+  padding: clamp(48px, 8vw, 96px) 0;
+
+  .faq__head{
+    text-align:center; max-width:900px; margin:0 auto clamp(20px, 4vw, 36px);
+  }
+  .faq__kicker{
+    display:inline-flex; align-items:center; gap:8px;
+    font-weight:800; letter-spacing:.02em;
+    color:#ff9bb3; background:rgba(255,79,122,.12);
+    border:1px solid rgba(255,79,122,.35);
+    padding:6px 10px; border-radius:999px; margin-bottom:10px;
+    svg{ opacity:.95; }
+  }
+  .faq__title{
+    margin:6px 0 6px; font-weight:900; letter-spacing:-.015em;
+    font-size:clamp(26px, 4.6vw, 40px);
+  }
+  .faq__subtitle{
+    color:rgba(255,255,255,.85);
+    font-size:clamp(15px,1.6vw,18px);
+  }
+
+  .faq__grid{
+    max-width:1000px; margin:0 auto clamp(24px, 5vw, 40px);
+    display:flex; flex-direction:column; gap:12px;
+  }
+
+  .faq__item{
+    background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:14px; overflow:hidden;
+    box-shadow:0 16px 40px rgba(0,0,0,.35);
+
+    &[open] .faq__summary{ border-bottom:1px solid rgba(255,255,255,.12); }
+    &[open] .faq__chev{ transform: rotate(180deg); }
+  }
+  .faq__summary{
+    cursor:pointer; user-select:none;
+    display:flex; justify-content:space-between; align-items:center;
+    gap:12px; padding:14px 16px; font-weight:800;
+    color:#fff; letter-spacing:.01em;
+    .faq__chev{ transition: transform .2s ease; opacity:.9; }
+  }
+  .faq__answer{
+    padding: 12px 16px 16px; color:rgba(255,255,255,.9);
+    line-height:1.6; font-size:1rem;
+  }
+
+  /* Garantia + CTA final */
+  .faq__guarantee{
+    margin: clamp(24px, 6vw, 42px) auto 0;
+    max-width:1000px;
+    display:grid; grid-template-columns: auto 1fr; gap:16px; align-items:center;
+
+    background: radial-gradient(120% 120% at 12% 18%, rgba(255,79,122,.18), transparent 55%),
+                linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:20px; padding: clamp(16px, 3vw, 22px);
+    box-shadow:0 24px 60px rgba(0,0,0,.45);
+  }
+  .g__icon{
+    width:56px; height:56px; border-radius:14px;
+    display:grid; place-items:center; color:#fff;
+    background:#ff4f7a; border:1px solid rgba(255,255,255,.18);
+    box-shadow:0 16px 36px rgba(255,79,122,.35);
+    svg{ font-size:1.3rem; }
+  }
+  .g__text{
+    h3{ margin:0 0 6px; font-weight:900; letter-spacing:-.01em; font-size:1.25rem; }
+    p{ margin:0 0 10px; color:rgba(255,255,255,.92); }
+  }
+  .g__bullets{
+    display:flex; flex-wrap:wrap; gap:8px; margin:0; padding:0;
+    li{
+      list-style:none; display:inline-flex; align-items:center; gap:8px;
+      background:rgba(0,0,0,.35); border:1px solid rgba(255,255,255,.18);
+      color:rgba(255,255,255,.9); padding:8px 10px; border-radius:10px; font-weight:600;
+      svg{ color:#44e87d; }
+    }
+  }
+  .g__cta{
+    grid-column: 1 / -1;
+    width:100%; max-width:460px; justify-self:center; margin-top:6px;
+  }
+  .g__foot{ grid-column: 1 / -1; color:rgba(255,255,255,.7); text-align:center; }
+
+  /* CTA pill reuse */
+  .cta.cta--pill{
+    display:flex; align-items:center; justify-content:center;
+    padding:14px 20px; border-radius:16px; text-decoration:none;
+    background:#ff4f7a; color:#fff; font-weight:900;
+    box-shadow:0 18px 50px rgba(255,79,122,.35);
+    position:relative; isolation:isolate;
+  }
+  .cta.cta--pill::after{
+    content:""; position:absolute; inset:-6px; border-radius:inherit;
+    box-shadow:0 0 0 0 rgba(255,79,122,.35); animation:pulse 2.2s infinite;
+  }
+  @keyframes pulse{
+    0%{ box-shadow:0 0 0 0 rgba(255,79,122,.35); }
+    70%{ box-shadow:0 0 0 18px rgba(255,79,122,0); }
+    100%{ box-shadow:0 0 0 0 rgba(255,79,122,0); }
+  }
+
+  /* Responsivo */
+  @media (max-width: 780px){
+    .faq__guarantee{ grid-template-columns: 1fr; text-align:center; }
+    .g__bullets{ justify-content:center; }
+  }
+}
