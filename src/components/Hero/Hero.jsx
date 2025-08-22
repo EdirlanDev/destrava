@@ -32,10 +32,10 @@ export default function Hero({ onPrimaryClick }) {
                 </h1>
 
                 {/* Subheadline — sua copy */}
-                <p className="hero__sub">
+                <h2 className="hero__sub">
                     A Descoberta que Está Destravando o Corpo e a Mente de Mulheres que
                     Já Tentaram de Tudo e Não Conseguiram Emagrecer.
-                </p>
+                </h2>
                 <p className="hero__sub hero__sub--muted">
                     Sem dietas restritivas, sem treinos exaustivos e sem culpa só um método que
                     entende o que realmente te trava.
