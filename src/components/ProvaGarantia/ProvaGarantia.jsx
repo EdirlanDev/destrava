@@ -14,14 +14,14 @@ const REVIEWS = [
   },
   {
     name: "Juliana M.",
-   avatar: "/avatars/a2.JPG",
+   avatar: "/avatars/a3.JPG",
     rating: 5,
     text:
       "O método me fez entender meus gatilhos. Parei com a compulsão noturna e me sinto mais leve.",
   },
   {
     name: "Aline R.",
-   avatar: "/avatars/a2.JPG",
+   avatar: "/avatars/a1.JPG",
     rating: 4.5,
     text:
       "A proposta é simples e possível. Segui os desafios e já senti resultado na 1ª semana.",

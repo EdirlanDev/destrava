@@ -13,6 +13,7 @@ import EmpilhamentoValor from "./components/EmpilhamentoValor/EmpilhamentoValor"
 import FAQ from "./components/FAQ/FAQ";
 import Planos from "./components/Planos/Planos";
 import Footer from "./components/Footer/Footer";
+import ProvasSociais from "./components/Provasocial/ProvasSociais";
 export default function App() {
   const goToCheckout = () => {
     // coloque aqui o link final (WhatsApp/Checkout)
@@ -28,6 +29,7 @@ export default function App() {
         <ProvaGarantia />
         <Historia/>
         <Mecanismo5D/>
+      <ProvasSociais intervalMs={3000} /> 
         <BonusExclusivos/>
         <EmpilhamentoValor vagasPercent={82} />
         <FAQ/>

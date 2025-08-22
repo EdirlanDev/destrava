@@ -20,7 +20,7 @@ export default function EmpilhamentoValor({ vagasPercent = 82 }) {
         {/* Coluna esquerda: O que você recebe */}
         <div className="stack__left">
           <span className="stack__kicker">O que você recebe</span>
-          <h2 className="stack__title">Empilhamento de Valor</h2>
+         
 
           <ul className="stack__list">
             {ITENS.map((it, idx) => (

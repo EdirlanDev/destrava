@@ -5,9 +5,8 @@ import { IoIosArrowForward } from "react-icons/io";
 const AVATARS = [
     "/avatars/a1.JPG",
    "/avatars/a2.JPG",
-    "/avatars/a1.JPG",
-   "/avatars/a2.JPG",
-   "/avatars/a2.JPG",
+    "/avatars/a3.JPG",
+   "/avatars/a4.JPG",
 ];
 
 export default function Hero({ onPrimaryClick }) {
@@ -46,7 +45,7 @@ export default function Hero({ onPrimaryClick }) {
                 <div className="hero__micro">
                     <span>Brasil: top 1 de hoje</span>
                     <span className="ok">99% gostaram</span>
-                    <span className="badge">18+</span>
+                   
                 </div>
 
                 {/* CTA principal estilo “pílula” com pulse */}
@@ -73,9 +72,7 @@ export default function Hero({ onPrimaryClick }) {
             </div>
 
             {/* Botão play flutuante opcional (se quiser chamar abertura/vsl) */}
-            <button className="hero__floating-play" aria-label="Assistir apresentação">
-                <FaPlay />
-            </button>
+            
         </section>
     );
 }

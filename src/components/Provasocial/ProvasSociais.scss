@@ -1,0 +1,95 @@
+.socials{
+  background:#0f1015;
+  padding: clamp(28px, 7vw, 64px) 0;
+  
+
+  .socials__wrap{
+    position:relative;
+  }
+
+  .socials__card{
+    display:grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: clamp(16px, 3.5vw, 28px);
+    align-items:center;
+
+    background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:18px;
+    box-shadow:0 20px 48px rgba(0,0,0,.4);
+    padding: clamp(12px, 2.4vw, 18px);
+    overflow:hidden;
+  }
+
+  /* animação suave a cada troca */
+  .fade-in{ animation: fadeIn .35s ease both; }
+  @keyframes fadeIn{ from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:none;} }
+
+  /* ====== MÍDIA ====== */
+  .socials__media{
+    display:block;
+  }
+  .imgBox{
+    width:100%;
+    background:#0e0f14;
+    border-radius:16px;
+    padding:8px;
+    border:2px dashed #ff6f91; /* tracejado rosa */
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:8px;
+  }
+  .imgBox.two{ grid-template-columns: 1fr 1fr; }
+  .imgBox img{
+    width:100%; height:400px; display:block; object-fit: cover; object-position: center;
+    border-radius:12px; aspect-ratio: 3/4; /* ajuste se preciso */
+  }
+
+  /* ====== TEXTO ====== */
+  .socials__text{
+    padding-right: clamp(4px, 1vw, 8px);
+  }
+  .socials__name{
+    font-family: "Dancing Script", cursive;
+    font-weight:700; letter-spacing:.01em;
+    font-size: clamp(24px, 4.6vw, 36px);
+    margin: 0 0 6px;
+  }
+  .socials__quote{
+    margin:0; color:rgba(255,255,255,.9);
+    line-height:1.6; font-size: clamp(.95rem, 1.4vw, 1rem);
+  }
+
+  /* ====== NAVEGAÇÃO ====== */
+  .nav{
+    position:absolute; top:50%; transform:translateY(-50%);
+    width:40px; height:40px; border-radius:50%;
+    display:grid; place-items:center; border:1px solid rgba(255,255,255,.2);
+    background:rgba(0,0,0,.45); color:#fff; cursor:pointer;
+    transition: transform .15s ease, background .15s ease;
+    &:hover{ transform:translateY(-50%) scale(1.05); background:rgba(0,0,0,.6); }
+  }
+  .nav--prev{ left:-6px; }
+  .nav--next{ right:-6px; }
+
+  .dots{
+    display:flex; gap:8px; justify-content:center; margin-top:12px; padding:0; list-style:none;
+  }
+  .dot{
+    width:10px; height:10px; border-radius:50%;
+    border:1px solid rgba(255,255,255,.35); background:transparent; cursor:pointer;
+    &.is-active{ background:#ff4f7a; border-color:#ff4f7a; }
+  }
+
+  /* ====== RESPONSIVO ====== */
+  @media (max-width: 900px){
+    .socials__card{ grid-template-columns: 1fr; }
+    .nav--prev{ left:6px; } .nav--next{ right:6px; }
+  }
+  @media (max-width: 560px){
+    .nav{ display:none; } /* setas somem; usa dots + swipe nativo */
+    .imgBox img{ aspect-ratio: auto; }
+  }
+}
+/* se existirem regras .nav antigas, garanta que não apareçam */
+.socials .nav{ display:none !important; }

@@ -25,8 +25,8 @@ export default function Footer() {
         <div className="footer__trust">
           <div className="t"><FaLock /> Pagamento seguro</div>
           <div className="t"><FaShieldAlt /> Garantia 7 dias</div>
-          <div className="t"><FaEnvelope /> suporte@seudominio.com</div>
-          <div className="t"><FaInstagram /> @suaempresa</div>
+          <div className="t"><FaEnvelope /> suportemk33@gmail.com</div>
+          <div className="t"><FaInstagram /> @geovanabuenopersonal</div>
         </div>
       </div>
 

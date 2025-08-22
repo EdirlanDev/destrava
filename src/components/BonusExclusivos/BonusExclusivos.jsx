@@ -10,14 +10,14 @@ const BONUSES = [
     icon: <FaUtensils />,
     title: "Cardápios Antiestresse com Baixas Calorias",
     text:
-      "Guia prático com 21 cardápios para reduzir a ansiedade e evitar ataques à geladeira à noite — combinações simples e saborosas, todas com menos de 400 calorias.",
+      "Guia prático com 21 cardápios para reduzir a ansiedade e evitar ataques à geladeira à noite combinações simples e saborosas, todas com menos de 400 calorias.",
   },
   {
     id: 2,
     icon: <FaHeartbeat />,
     title: "Método SOS TPM: Vontade Zero de Doce",
     text:
-      "Técnica rápida de reprogramação mental para driblar a compulsão por doces na TPM. Em 5 minutos, você mantém o foco — sem culpa nem sabotagem.",
+      "Técnica rápida de reprogramação mental para driblar a compulsão por doces na TPM. Em 5 minutos, você mantém o foco sem culpa nem sabotagem.",
   },
   {
     id: 3,
