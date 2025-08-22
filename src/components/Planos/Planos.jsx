@@ -2,7 +2,7 @@ import { FaLock, FaCreditCard, FaShieldAlt, FaCheckCircle } from "react-icons/fa
 import "./Planos.scss";
 
 export default function Planos({
-  checkoutUrl = "https://checkout.seu-dominio.com/destrava?plan=67",
+  checkoutUrl = "https://pay.kiwify.com.br/1EqlFnv",
 }) {
   return (
     <section className="plans section" id="planos" aria-label="Planos e Checkout">

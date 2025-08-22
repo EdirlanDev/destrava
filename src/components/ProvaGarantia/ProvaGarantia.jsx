@@ -6,21 +6,21 @@ import "./ProvaGarantia.scss";
 
 const REVIEWS = [
   {
-    name: "Patrícia S.",
+    name: " Walnisia ",
     avatar: "/avatars/a2.JPG",
     rating: 5,
     text:
       "Em 3 semanas voltei a usar um jeans que estava encostado há 2 anos. Sem passar fome e sem me culpar!",
   },
   {
-    name: "Juliana M.",
+    name: " Laninha",
    avatar: "/avatars/a3.JPG",
     rating: 5,
     text:
-      "O método me fez entender meus gatilhos. Parei com a compulsão noturna e me sinto mais leve.",
+      "O que mais me surpreendeu foi a simplicidade. Não precisei abrir mão de tudo que gosto e mesmo assim vi diferença rápida. Hoje me sinto mais confiante e motivada do que nunca.",
   },
   {
-    name: "Aline R.",
+    name: " Narla",
    avatar: "/avatars/a1.JPG",
     rating: 4.5,
     text:
