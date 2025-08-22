@@ -51,7 +51,7 @@ export default function Mecanismo5D() {
   return (
     <section className="fiveD section" id="metodo">
       <div className="container">
-        <span className="fiveD__kicker" data-aos="fade-up">Mecanismo</span>
+        
         <h2 className="fiveD__title" data-aos="fade-up" data-aos-delay="50">
           Método 5D do Emagrecimento Consciente
         </h2>
